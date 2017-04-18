@@ -6,8 +6,8 @@ CLI for ON/OFF support of Acroname's USBHub3p in python
 
 ## Usage
 #### Enabling a port
-  `acroname.py --port 0 --enable`
+  `./acroname.py --port 0 --enable`
 #### Disabling a port
- `acroname.py --port 0 --disable`
+ `./acroname.py --port 0 --disable`
 #### Cycling a port (disables, sleeps 2, then enables)
-  `acroname.py --port 0 --cycle`
+  `./acroname.py --port 0 --cycle`
