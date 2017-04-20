@@ -19,12 +19,12 @@ def main():
   for i in range(0,100):
     while True:
         try:
-			result = stem.discoverAndConnect(brainstem.link.Spec.USB)
-			if(result != brainstem.result.Result.NO_ERROR):
-  			      from time import sleep
-  			      sleep(0.2)
-			else:
-			      break
+            result = stem.discoverAndConnect(brainstem.link.Spec.USB)
+            if(result != brainstem.result.Result.NO_ERROR):
+                  from time import sleep
+                  sleep(0.2)
+            else:
+                  break
         except (result != brainstem.result.Result.NO_ERROR):
            continue
 
