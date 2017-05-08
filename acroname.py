@@ -17,16 +17,17 @@ def main():
 
   #retry connecting to hub
   for i in range(0,100):
-    while True:
+    gotResult = False
+    while not gotResult:
         try:
             result = stem.discoverAndConnect(brainstem.link.Spec.USB)
-            if(result != brainstem.result.Result.NO_ERROR):
-                  from time import sleep
-                  sleep(0.2)
-            else:
-                  break
+            if(result == brainstem.result.Result.NO_ERROR):
+                  gotResult = True
+                break
         except (result != brainstem.result.Result.NO_ERROR):
            continue
+    if gotResult:
+      break
 
   # turn on the user led for a nice visual indicator that we're talking
   # to the USBHub3+
