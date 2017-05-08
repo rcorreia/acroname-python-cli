@@ -22,7 +22,7 @@ def main():
         try:
             result = stem.discoverAndConnect(brainstem.link.Spec.USB)
             if(result == brainstem.result.Result.NO_ERROR):
-                  gotResult = True
+                gotResult = True
                 break
         except (result != brainstem.result.Result.NO_ERROR):
            continue
