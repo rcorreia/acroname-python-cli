@@ -59,7 +59,7 @@ def main():
       if(result != brainstem.result.Result.NO_ERROR):
             sys.stdout.write(' enabling failed with error %d' % result)
   else:
-    print 'You must specify a port state with the --enable, --disable, or --cycle option'
+    print("You must specify a port state with the --enable, --disable, or --cycle option")
 
   # clear out any stdout buffer and make a new line
   sys.stdout.flush()
